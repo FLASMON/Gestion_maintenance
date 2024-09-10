@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-btn {
+    box-shadow: none !important;
+    height: auto;
+    padding: 8px 15px;
+    @apply text-xs shadow-none hover:shadow motion-safe:hover:scale-[1.01] transition-all duration-300;
+}
+
+.ant-btn-primary{
+    @apply bg-primary;
+}
+
+.btn-secondary{
+    @apply bg-gray-200 border-0 hover:bg-gray-400 hover:!text-white;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.ant-select-selector {
+    @apply flex items-center w-full !h-10 px-8;
+}
+
+.ant-pagination {
+    @apply !flex !items-center !justify-center !mt-10
+}
+
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+    @apply !flex !items-center !justify-center !me-0
+}
+
+.main-scrool::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.main-scrool::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    @apply rounded-full bg-gray-300 motion-safe:hover:bg-gray-400 transition-all duration-300;
+}
+
+.main-scrool::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.main-scrool::-webkit-scrollbar-button {
+    display: none;
+}
+
+.ant-modal .ant-modal-header {
+    @apply !text-white bg-primary;
+
+}
+.ant-modal .ant-modal-title {
+    @apply !text-white uppercase
+}
+
+.ant-modal .ant-modal-close-x {
+    @apply text-[#E2E2E2] hover:text-white
+}
+
+.ant-input-affix-wrapper .ant-input-clear-icon {
+    display: flex;
+}
+
